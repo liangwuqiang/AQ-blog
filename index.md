@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 简单的博客样板
+title: 一个简单的Github博客网页
 ---
 
 <div>
