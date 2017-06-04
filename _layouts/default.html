@@ -4,12 +4,30 @@
     {% include head.html %}
   </head>
   <body>
-    <div>
+    <div class="wrapper">
       {% include header.html %}
-      <section>
-        {{ content }}
-      </section>
+          <div id="container">
+             <p class="tagline">一个简单的Github博客网页</p>
+                <div id="main" role="main">
+                  <div class="download-bar">
+                      <div class="inner">
+                        <a href="https://github.com/liangwuqiang/my-blog" class="code">在 GitHub 中查看 "My Github Blog" 源代码</a>
+                      </div>
+                      <span class="blc"></span><span class="trc"></span>
+                  </div>
+                  <article class="markdown-body">
+                    {{ content }}
+                 </article>
+              </div>
+          </div>
       {% include footer.html %}
     </div>
+    <div class="current-section">
+    <a href="#top">回到顶部</a>
+    <a href="https://github.com/liangwuqiang/my-blog/tarball/master" class="tar">tar</a>
+    <a href="https://github.com/liangwuqiang/my-blog/zipball/master" class="zip">zip</a>
+    <a href="" class="code">源代码</a>
+    <p class="name"></p>
+</div>
   </body>
 </html>
