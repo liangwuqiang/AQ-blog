@@ -1,9 +1,10 @@
 baseurl: /my-blog
+permalink: date
 
 #theme: jekyll-theme-cayman
 #theme: jekyll-theme-slate
 #theme: jekyll-theme-merlot
-theme: jekyll-theme-time-machine
+#theme: jekyll-theme-time-machine
 #theme: jekyll-theme-minimal
 #theme: jekyll-theme-leap-day
 #theme: jekyll-theme-modernist
