@@ -1,3 +1,8 @@
+---
+layout: post
+title: normalize.css
+---
+
 ```css
 @charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
