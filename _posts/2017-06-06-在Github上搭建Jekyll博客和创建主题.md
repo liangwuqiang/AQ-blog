@@ -145,14 +145,14 @@ layout: base
 <div class="row">
   <div class="col-md-12 aside3-title">
     <br>
-    <h2 id="#identifier">{\{ page.title }}</h2>
+    <h2 id="#identifier">{{ page.title }}</h2>
   </div>
   <div class="col-md-12 aside3-content">
     <div id="page-content">
-      {\{ content }}
+      {{ content }}
     </div>
     <hr>
-    {\% include disqus.html %}
+    {% include disqus.html %}
   </div>
 </div>
 ```
@@ -184,14 +184,14 @@ layout: base
 </html>
 ```
 
-这个文件就更像一个HTML文件了，用PHP或者Python写过web应用的人看到{% %}这样的标签应该不陌生，这不就是模板标签嘛。其实Jekyll也是借用了一下模板系统的，官网说明在这里，看到开头第一句讲的它用了Liquid了吧。如果Jekyll的文档不能满足你的话，可以去Liquid那里查查。
+这个文件就更像一个HTML文件了，用PHP或者Python写过web应用的人看到`{% %}`这样的标签应该不陌生，这不就是模板标签嘛。其实Jekyll也是借用了一下模板系统的，官网说明在这里，看到开头第一句讲的它用了Liquid了吧。如果Jekyll的文档不能满足你的话，可以去Liquid那里查查。
 
 我解释一下base.html中几个标签的功能。
 
-{% include header.html %} 从_includes中把header.html包含进来放在这里
-{% include navside.html %} 同上
-{{ content }} 这句的作用是将继承这个Layout的文件中的代码，放在这里
-所以再看page.html文件就很容易了，它就是把配置项下面的内容，填补到base.html中的{{ content }}处形成了一个文件。那么page.html中的{{ content }}做什么用呢？因为别人也可以以page.html来作为自己的布局文件。
+`{% include header.html %}` 从_includes中把header.html包含进来放在这里
+`{% include navside.html %}` 同上
+`{{ content }}` 这句的作用是将继承这个Layout的文件中的代码，放在这里
+所以再看page.html文件就很容易了，它就是把配置项下面的内容，填补到base.html中的`{{ content }}`处形成了一个文件。那么page.html中的`{{ content }}`做什么用呢？因为别人也可以以page.html来作为自己的布局文件。
 
 入口文件index.html就是这么干的：
 
