@@ -155,7 +155,7 @@ layout: base
       {{ content }}
     </div>
     <hr>
-{% include disqus.html %}
+<!-- {% include disqus.html %} -->
   </div>
 </div>
 ```
