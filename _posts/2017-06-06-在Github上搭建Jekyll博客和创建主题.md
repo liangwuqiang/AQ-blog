@@ -142,10 +142,10 @@ description:                                   #自定义常量
 首先我说一下我最基础的page.html文件，因为它决定了入口文件index.html的布局。
 
 
-
-```HTML
+```markdown
+---
 layout: base
-
+---
 <div class="row">
   <div class="col-md-12 aside3-title">
     <br>
