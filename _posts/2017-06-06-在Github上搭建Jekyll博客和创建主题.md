@@ -82,3 +82,24 @@ markdown: redcarpet                         #markdown解释器
 这里的自定义常量可以在模板中使用，以后有修改的时候就不需要跑去改代码了。尤其是对一些私人的选项，可以在这里定义。现在我的博客中出了disqus和googleanalytics外都直接在这里设定就好了。
 
 
+### 域名配置
+
+CNAME这个文件写明了这个站点的域名，如果不喜欢username.github.io的话，可以像我一样改掉
+
+```a
+yansu.org
+```
+
+改法只要在这个文件中写入域名就可以了。不过你需要去域名服务商那里设定域名解析规则。
+
+只要把主机记录为@,www的记录值写成username.github.io就好了。
+
+### 博客存放
+
+\_posts下的所有目录中的所有博客，都会被Jekyll处理成为静态的html文件，然后放在_site下。我这里没有_site目录，是因为我在.gitignore文件中把这个目录屏蔽掉了，它不会上传到Github上。
+
+```a
+_site/
+_drafts/
+.DS_Store
+```
