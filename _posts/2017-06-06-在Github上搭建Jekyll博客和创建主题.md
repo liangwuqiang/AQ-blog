@@ -159,3 +159,33 @@ layout: base
   </div>
 </div>
 ```
+
+
+从这里可以看到这个文件写起来一点都不复杂，但是为什么开头还有个layout呢？因为它也不是最基本的布局文件，最基本的是base.html，我们看一下它的内容。
+
+=================================================
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  {% include header.html %}
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      {% include navside.html %}
+      <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 aside3">
+        <div id="container">
+          <div id="pjax">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+  {% include googleanalytics.html %}
+</body>
+</html>
+```
