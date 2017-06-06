@@ -184,8 +184,8 @@ layout: base
       </div>
     </div>
   </div>
-  {% include footer.html %}
-  {% include googleanalytics.html %}
+  {\% include footer.html %}
+  {\% include googleanalytics.html %}
 </body>
 </html>
 ```
