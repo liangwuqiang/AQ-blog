@@ -141,4 +141,21 @@ description:                                   #自定义常量
 
 首先我说一下我最基础的page.html文件，因为它决定了入口文件index.html的布局。
 
-
+```markdown
+---
+layout: base
+---
+<div class="row">
+  <div class="col-md-12 aside3-title">
+    <br>
+    <h2 id="identifier">{{ page.title }}</h2>
+  </div>
+  <div class="col-md-12 aside3-content">
+    <div id="page-content">
+      {{ content }}
+    </div>
+    <hr>
+    {% include disqus.html %}
+  </div>
+</div>
+```
