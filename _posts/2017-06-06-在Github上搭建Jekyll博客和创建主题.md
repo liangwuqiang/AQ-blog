@@ -148,14 +148,14 @@ layout: base
 <div class="row">
   <div class="col-md-12 aside3-title">
     <br>
-    <h2 id="identifier">{{ page.title }}</h2>
+    <h2 id="identifier"></h2>
   </div>
   <div class="col-md-12 aside3-content">
     <div id="page-content">
-      {{ content }}
+
     </div>
     <hr>
-    {% include disqus.html %}
+
   </div>
 </div>
 ```
